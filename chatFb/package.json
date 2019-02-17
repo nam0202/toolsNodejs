@@ -1,0 +1,16 @@
+{
+  "name": "chatfb",
+  "version": "1.0.0",
+  "description": "chat fb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "namph",
+  "license": "ISC",
+  "dependencies": {
+    "facebook-chat-api": "^1.6.1",
+    "install": "^0.12.2",
+    "npm": "^6.7.0"
+  }
+}
