@@ -1,0 +1,1 @@
+{"ows_system_notify_templates":{"properties":[{"name":"id","type":"int(11)"},{"name":"name","type":"varchar(255)"},{"name":"content","type":"text"},{"name":"created_on","type":"timestamp"},{"name":"created_by","type":"int(11)"},{"name":"lastest_update_on","type":"date"},{"name":"lastest_update_by","type":"int(11)"},{"name":"deleted","type":"int(11)"}],"api":"all","ref":[]}}

@@ -1,0 +1,1 @@
+{"ows_contents_messenger":{"properties":[{"name":"id","type":"int(11)"},{"name":"user_group_id","type":"int(11)"},{"name":"content","type":"text"},{"name":"created_by","type":"int(11)"},{"name":"created_on","type":"timestamp"},{"name":"lastest_update_by","type":"int(11)"},{"name":"lastest_update_on","type":"datetime"},{"name":"deleted","type":"int(11)"}],"api":"all","ref":[]}}

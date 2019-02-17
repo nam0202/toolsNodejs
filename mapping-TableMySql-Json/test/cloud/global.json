@@ -1,0 +1,1 @@
+{"server":{"port":8080,"limit":1,"static":"public"},"database":{"host":"localhost","driver":"mysql","user":"root","port":3306,"password":"root@123","name":"cloudclass"},"cors":{"origin":"*","methods":"GET,HEAD,PUT,PATCH,POST,DELETE","preflightContinue":false,"optionsSuccessStatus":204}}
