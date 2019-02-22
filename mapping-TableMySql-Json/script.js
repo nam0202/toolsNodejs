@@ -9,7 +9,6 @@ var knex = require('knex')({
 })
 
 var realation= [];
-
 knex.raw("SELECT `TABLE_NAME`,`COLUMN_NAME`,`REFERENCED_TABLE_NAME`,`REFERENCED_COLUMN_NAME`" +
     "FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE`" +
     "WHERE `REFERENCED_TABLE_NAME` IS NOT NULL AND `TABLE_SCHEMA` = 'cloudclass' ").then((res) => {
@@ -21,19 +20,36 @@ const fs = require('fs');
 var getRef = (tableName)=>{
     return new Promise((resolve,reject)=>{
         var lengt =  realation.length;
-        var ref = [];
-        for(let i=0;i< lengt;i++){
-            if(realation[i].TABLE_NAME === tableName){
-                let oneRef = {};
-                oneRef.one = realation[i].REFERENCED_TABLE_NAME;
-                oneRef.key = realation[i].COLUMN_NAME;
-                ref.push(oneRef);
-                realation.shift();
-            }else{
-                break;
+        var refs = [];
+        // console.log(tableName);
+        var index  = realation.findIndex(e => e.TABLE_NAME === tableName);
+        if(index>-1){
+            for(let i = index;i<lengt;i++){
+                if(realation[i].TABLE_NAME === tableName){
+                    let ref = {};
+                    ref.one = realation[i].REFERENCED_TABLE_NAME;
+                    ref.key = realation[i].COLUMN_NAME;
+                    refs.push(ref);
+                }else{
+                    break;
+                }
             }
         }
-        resolve(ref);
+        // for(let i=index;i < lengt;i++){
+            // console.log(i);
+            // if(realation[i].TABLE_NAME === tableName){
+            //     console.log(realation[i].TABLE_NAME,lengt,i,tableName);
+            //     // console.log(lengt,i,tableName,realation[i].TABLE_NAME);
+            //     let oneRef = {};
+            //     oneRef.one = realation[i].REFERENCED_TABLE_NAME;
+            //     oneRef.key = realation[i].COLUMN_NAME;
+            //     ref.push(oneRef);
+            //     // realation.shift();
+            // }else{
+            //     break;
+            // }
+        // }
+        resolve(refs);
     })
 }
 var getTable =()=>{
@@ -46,8 +62,9 @@ var getTable =()=>{
                 let Object = {};
                 Object[tableName]={}
                 Object[tableName].properties = [];
-                Object[tableName].api = "all";
-                Object[tableName].ref = await getRef(tableName);
+                Object[tableName].api = "all"; 
+                Object[tableName].ref = await getRef(tableName,i);
+                console.log(Object[tableName].ref);
                 for(let j=0;j<response[0].length;j++){
                     let field = {};
                     field.name = response[0][j].Field;
@@ -59,12 +76,12 @@ var getTable =()=>{
                     if(err) console.log(err);
                     return
                 })
-                console.log(Object[tableName]);
+                // console.log(Object[tableName]);
             })
         }
     })
     setTimeout(()=>{
-        console.log(define)
+        // console.log(define)
         fs.writeFile('./test/cloud/meta.json',JSON.stringify({definitions:define}),(err)=>{
             if(err) console.log(err);
             
