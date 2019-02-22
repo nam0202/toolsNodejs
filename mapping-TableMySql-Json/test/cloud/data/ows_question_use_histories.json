@@ -1,0 +1,1 @@
+{"ows_question_use_histories":{"properties":[{"name":"id","type":"int(11)"},{"name":"no_time_service","type":"int(11)"},{"name":"no_time_correct","type":"int(11)"},{"name":"no_time_incorrect","type":"int(11)"},{"name":"no_time_unattempt","type":"int(11)"},{"name":"question_id","type":"int(11)"},{"name":"deleted","type":"tinyint(4)"}],"api":"all","ref":[]}}

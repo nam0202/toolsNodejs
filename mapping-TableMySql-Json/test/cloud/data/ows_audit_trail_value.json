@@ -1,0 +1,1 @@
+{"ows_audit_trail_value":{"properties":[{"name":"id","type":"int(11)"},{"name":"audit_trail_id","type":"int(11)"},{"name":"column_name","type":"varchar(255)"},{"name":"old_value","type":"longtext"},{"name":"new_value","type":"longtext"},{"name":"audit_time","type":"timestamp"}],"api":"all","ref":[]}}

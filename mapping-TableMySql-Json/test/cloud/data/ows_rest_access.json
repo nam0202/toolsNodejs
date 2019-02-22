@@ -1,0 +1,1 @@
+{"ows_rest_access":{"properties":[{"name":"id","type":"int(11)"},{"name":"key_id","type":"int(11)"},{"name":"controller","type":"varchar(50)"},{"name":"method","type":"varchar(255)"},{"name":"date_created","type":"datetime"},{"name":"date_modified","type":"timestamp"},{"name":"deleted","type":"int(11)"}],"api":"all","ref":[]}}

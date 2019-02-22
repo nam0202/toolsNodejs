@@ -1,0 +1,1 @@
+{"ows_log_user_logins":{"properties":[{"name":"id","type":"int(20)"},{"name":"user_id","type":"int(20)"},{"name":"login_status","type":"varchar(20)"},{"name":"note","type":"text"},{"name":"created_on","type":"datetime"},{"name":"created_by","type":"int(11)"},{"name":"deleted","type":"int(11)"}],"api":"all","ref":[]}}

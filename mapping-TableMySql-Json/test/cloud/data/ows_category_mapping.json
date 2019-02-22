@@ -1,0 +1,1 @@
+{"ows_category_mapping":{"properties":[{"name":"id","type":"int(11)"},{"name":"category_id","type":"int(11)"},{"name":"object_id","type":"int(11)"},{"name":"created_on","type":"timestamp"},{"name":"created_by","type":"int(11)"},{"name":"lastest_update_on","type":"datetime"},{"name":"lastest_update_by","type":"int(11)"},{"name":"deleted","type":"int(11)"}],"api":"all","ref":[]}}
