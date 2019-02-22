@@ -1,0 +1,65 @@
+{
+    "ows_user_faq": {
+        "properties": [
+            {
+                "name": "id",
+                "type": "int(11)"
+            },
+            {
+                "name": "user_id",
+                "type": "int(11)"
+            },
+            {
+                "name": "object_id",
+                "type": "int(11)"
+            },
+            {
+                "name": "program_id",
+                "type": "int(11)"
+            },
+            {
+                "name": "user_comment_content",
+                "type": "text"
+            },
+            {
+                "name": "parent_faq_id",
+                "type": "int(11)"
+            },
+            {
+                "name": "parent_faq_path",
+                "type": "varchar(255)"
+            },
+            {
+                "name": "status",
+                "type": "varchar(255)"
+            },
+            {
+                "name": "public",
+                "type": "int(11)"
+            },
+            {
+                "name": "created_on",
+                "type": "timestamp"
+            },
+            {
+                "name": "created_by",
+                "type": "int(11)"
+            },
+            {
+                "name": "lastest_update_on",
+                "type": "datetime"
+            },
+            {
+                "name": "lastest_update_by",
+                "type": "int(11)"
+            },
+            {
+                "name": "deleted",
+                "type": "tinyint(4)"
+            }
+        ],
+        "api": "all",
+        "ref": [
+        ]
+    }
+}

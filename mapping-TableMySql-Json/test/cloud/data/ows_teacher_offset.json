@@ -1,0 +1,1 @@
+{"ows_teacher_offset":{"properties":[{"name":"id","type":"int(11)"},{"name":"absent_id","type":"int(11)"},{"name":"new_live_id","type":"int(11)"},{"name":"created_by","type":"int(11)"},{"name":"created_on","type":"timestamp"},{"name":"lastest_update_by","type":"int(11)"},{"name":"lastest_update_on","type":"datetime"},{"name":"deleted","type":"int(11)"}],"api":"all","ref":[]}}

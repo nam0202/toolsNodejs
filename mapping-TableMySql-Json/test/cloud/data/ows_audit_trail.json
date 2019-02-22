@@ -1,0 +1,1 @@
+{"ows_audit_trail":{"properties":[{"name":"id","type":"int(11)"},{"name":"user_id","type":"int(11)"},{"name":"course_id","type":"int(11)"},{"name":"table_name","type":"varchar(255)"},{"name":"audit_type","type":"varchar(50)"},{"name":"instance_key","type":"varchar(50)"}],"api":"all","ref":[]}}

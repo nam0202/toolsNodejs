@@ -1,0 +1,1 @@
+{"knex_migrations":{"properties":[{"name":"id","type":"int(10) unsigned"},{"name":"name","type":"varchar(255)"},{"name":"batch","type":"int(11)"},{"name":"migration_time","type":"timestamp"}],"api":"all","ref":[]}}
